@@ -1,3 +1,4 @@
+
 import customtkinter as ctk
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -8,8 +9,8 @@ class DigitalResumeApp:
         self.master = master
         if isinstance(self.master, (ctk.CTk, ctk.CTkToplevel)):
             self.master.title("Digital Resume - Aj S. Lorenzo")
-        self.master.attributes('-fullscreen', True)
-        self.master.bind("<Escape>", lambda event: self.master.attributes("-fullscreen", not self.master.attributes("-fullscreen")))
+        # self.master.attributes('-fullscreen', True)  # Removed/Commented out this line
+        # self.master.bind("<Escape>", lambda event: self.master.attributes("-fullscreen", not self.master.attributes("-fullscreen"))) # Removed/Commented out this line
 
         ctk.set_appearance_mode("light")
         ctk.set_default_color_theme("blue")
